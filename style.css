@@ -1,0 +1,76 @@
+body {
+    display: grid;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(34, 90%, 90%);
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    grid-template-areas:
+    'navigation'
+    'main';
+}
+
+h1 {
+    font-size: 2.5em;
+    font-family: rockwell;
+    letter-spacing: -2%;
+    margin-top: 12vh; /* Add space above each h1 element */
+}
+
+h1:hover {
+    color: hsl(34, 90%, 80%);
+    letter-spacing: 15px;
+    animation: scatter 3s infinite;
+}
+  
+@keyframes scatter {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(20px, 0) rotate(-15deg);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  a {
+    color: hsl(0, 0%, 75%);
+    opacity: 0.5;
+    transition: font-size 0.3s ease, transform 0.3s ease; /* Add smooth transitions for both font size and transform */
+  }
+  
+  a:hover {
+    color: hsl(34, 63%, 46%);
+    opacity: 1;
+    font-size: 120%; /* Increase the font size on hover */
+    transform: translateY(-50%) scale(1.2); /* Move the link up by 50% of its height and increase the font size */
+  }
+  
+#nav {
+    grid-area: navigation;
+    display: flex;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 2vw 2vh;
+    height: 75px; /* Set a fixed height for the navbar */
+
+}
+#mainframe{
+    grid-area: main;
+}
+
+#text {
+    letter-spacing: -1px;
+    transition: text-shadow 0.3s ease;
+    color: hsl(19, 18%, 41%)
+}
+
+#text:hover{
+    color: hsl(34, 33%, 66%);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
