@@ -58,8 +58,17 @@ h1:hover {
     justify-content: space-around;
     padding: 2vw 2vh;
     height: 75px; /* Set a fixed height for the navbar */
-
 }
+
+#nav a {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  #nav a:hover {
+    border-color: hsl(34, 63%, 46%);
+  }
+  
 #mainframe{
     grid-area: main;
 }
