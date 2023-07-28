@@ -98,5 +98,20 @@ h1:hover {
 
 .breakImage:hover img {
   box-shadow: 0 0 10px rgba(255, 255, 255, 1);
-  animation: scatter 3s infinite;
-}    
+  animation: spiral 20s infinite;
+}
+
+@keyframes spiral {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 0) rotate(-360deg);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
