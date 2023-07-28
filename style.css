@@ -83,3 +83,9 @@ h1:hover {
     color: hsl(34, 33%, 66%);
     text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
+
+.breakImage img{
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+  }
