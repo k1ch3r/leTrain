@@ -4,12 +4,17 @@ body {
     color: hsl(34, 90%, 90%);
     text-align: center;
     font-size: 1.5em;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
     grid-template-areas:
     'navigation'
     'main';
 }
+
+.largeDiv {
+  margin-bottom: 5vh;
+}
+
 
 h1 {
     font-size: 2.5em;
@@ -69,24 +74,29 @@ h1:hover {
     border-color: hsl(34, 63%, 46%);
   }
   
-#mainframe{
+#mainframe {
     grid-area: main;
 }
 
 #text {
     letter-spacing: -1px;
     transition: text-shadow 0.3s ease;
-    color: hsl(19, 18%, 41%)
+    color: hsl(19, 18%, 41%);
 }
 
-#text:hover{
+#text:hover {
     color: hsl(34, 33%, 66%);
     text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
-.breakImage img{
-  padding-top: 10%;
+.breakImage img {
   border-radius: 50%;
   width: 70%;
-  max-height: 100%;
+  height: auto;
+  max-width: 50vw;
   }
+
+.breakImage:hover img {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  animation: scatter 3s infinite;
+}    
