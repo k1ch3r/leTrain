@@ -7,7 +7,7 @@ body {
 }
 
 #wrapper {
-  width: 100vw;
+  /* width: 100vw;*/
   display: grid;
   grid-template-areas:
     "logo navigation"
@@ -34,11 +34,13 @@ a:hover {
 .header {
   height: 10vh;
   line-height: 10vh;
+  /* position: absolute; */
 }
 
 #logo {
   grid-area: logo;
-  text-align: center;
+  position: fixed;
+  translate: 2vw;
   font-size: 1.75em;
   font-family: Impact, Haettenschweiler, "Arial Narrow", sans-serif;
   letter-spacing: 0.05em;
@@ -60,7 +62,7 @@ a:hover {
 }
 
 @keyframes bgPan {
-  0 % {
+  0% {
     background-position: -25%;
   }
   50% {
@@ -71,6 +73,7 @@ a:hover {
 #nav {
   grid-area: navigation;
   display: flex;
+  /* translate: 45vw; */
   margin-right: 20vw;
   justify-content: space-around;
 }
@@ -83,7 +86,7 @@ h1 {
   font-size: 2.5em;
   font-family: rockwell;
   letter-spacing: -2%;
-  margin-top: 12vh; /* Add space above each h1 element */
+  margin-top: 5vh;
 }
 
 h1:hover {
@@ -106,6 +109,7 @@ h1:hover {
 
 #mainframe {
   grid-area: main;
+  flex-wrap: wrap;
 }
 
 #text {
