@@ -21,14 +21,14 @@ a {
   opacity: 0.5;
   transition:
     font-size 0.3s ease,
-    transform 0.3s ease; /* Add smooth transitions for both font size and transform */
+    transform 0.3s ease;
 }
 
 a:hover {
   color: hsl(34, 63%, 46%);
   opacity: 1;
-  font-size: 120%; /* Increase the font size on hover */
-  transform: translateY(-50%) scale(1.2); /* Move the link up by 50% of its height and increase the font size */
+  font-size: 120%;
+  transform: translateY(-50%) scale(1.2);
 }
 
 .header {
@@ -96,14 +96,8 @@ h1:hover {
 }
 
 @keyframes scatter {
-  0% {
-    transform: translate(0, 0);
-  }
   50% {
-    transform: translate(20px, 0) rotate(-15deg);
-  }
-  100% {
-    transform: translate(0, 0);
+    transform: rotate(-15deg) scale(0.8);
   }
 }
 
