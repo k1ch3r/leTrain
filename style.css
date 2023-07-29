@@ -62,9 +62,6 @@ a:hover {
 }
 
 @keyframes bgPan {
-  0% {
-    background-position: -25%;
-  }
   50% {
     background-position: 125%;
   }
