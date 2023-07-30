@@ -24,15 +24,13 @@ a {
   color: hsl(0, 0%, 75%);
   opacity: 0.5;
   transition:
-    font-size 0.3s ease,
-    transform 0.3s ease;
+    font-size 0.3s ease;
 }
 
 a:hover {
   color: hsl(34, 63%, 46%);
   opacity: 1;
-  font-size: 120%;
-  transform: translateY(-2%) scale(1.2);
+  font-size: 150%;
 }
 
 .header {
