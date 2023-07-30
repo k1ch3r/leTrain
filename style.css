@@ -1,5 +1,9 @@
 body {
-  background-color: hsl(0, 0%, 5%);
+  --dark: hsl(0, 0%, 5%);
+  --gradientCol1: hsl(34, 90%, 90%);
+  --gradientCol2: hsl(273, 39%, 47%);
+  --gradientCol3: hsl(313, 74%, 60%);
+  background-color: var(--dark);
   color: hsl(34, 90%, 90%);
   text-align: center;
   font-size: 1.5em;
@@ -28,19 +32,21 @@ a:hover {
   color: hsl(34, 63%, 46%);
   opacity: 1;
   font-size: 120%;
-  transform: translateY(-50%) scale(1.2);
+  transform: translateY(-2%) scale(1.2);
 }
 
 .header {
   height: 10vh;
   line-height: 10vh;
-  /* position: absolute; */
+  position: fixed;
+  background-color: var(--dark);
 }
 
 #logo {
   grid-area: logo;
   position: fixed;
-  translate: 2vw;
+  width: 10vw;
+  z-index: 3;
   font-size: 1.75em;
   font-family: Impact, Haettenschweiler, "Arial Narrow", sans-serif;
   letter-spacing: 0.05em;
@@ -51,9 +57,6 @@ a:hover {
     var(--gradientCol3),
     var(--gradientCol1)
   );
-  --gradientCol1: hsl(34, 90%, 90%);
-  --gradientCol2: hsl(273, 39%, 47%);
-  --gradientCol3: hsl(313, 74%, 60%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 150%;
@@ -70,9 +73,10 @@ a:hover {
 #nav {
   grid-area: navigation;
   display: flex;
-  /* translate: 45vw; */
-  margin-right: 20vw;
-  justify-content: space-around;
+  justify-content:end;
+  gap: 2vw;
+  width: 90vw;
+  z-index: 2;
 }
 
 .largeDiv {
@@ -100,7 +104,9 @@ h1:hover {
 
 #mainframe {
   grid-area: main;
-  flex-wrap: wrap;
+  overflow: auto;
+  padding-top: 20vh;
+  position: absolute;
 }
 
 #text {
